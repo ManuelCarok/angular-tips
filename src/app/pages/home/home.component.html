@@ -1,1 +1,18 @@
 <p>home works!</p>
+
+<form [formGroup]="formHome">
+    <input type="text" formControlName="ctrlName">
+    <input type="text" formControlName="ctrlLastName">
+</form>
+
+
+<!-- <ul>
+    <li *ngFor="let user of users | async">{{ user.email }}</li>
+</ul> -->
+<br>
+values:
+<pre>{{ formHome.getRawValue() | json }}</pre>
+<br>
+<button (click)="setError()">Set Error</button>
+<br>
+<button (click)="runUsers()">Go Users</button>

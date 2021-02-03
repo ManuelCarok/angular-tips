@@ -1,0 +1,14 @@
+<p>users works!</p>
+<button (click)="reload()">Reload Data</button>
+<br><br>
+Observable:
+<pre *ngIf="(user$ | async) as userHtml">{{ userHtml | json }}</pre>
+<!-- <br><br>
+<div *ngIf="(user$ | async) as userHtml2">{{ userHtml2.name }}</div> -->
+<br><br>
+Variable:
+<pre>{{ user | json }}</pre>
+
+<br><br>
+Extras:
+<pre>{{ currentNavigation.extras.state | json }}</pre>
