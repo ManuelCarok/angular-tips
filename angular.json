@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-tips"
+    }
+  },
+  "defaultProject": "angular-tips",
+  "cli": {
+    "analytics": false
+  }
 }
